@@ -1,0 +1,69 @@
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.csproj.AssemblyReference.cache
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.csproj.SuggestedBindingRedirects.cache
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.LoginForm.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.csproj.GenerateResource.cache
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.csproj.CoreCompileInputs.cache
+C:\Users\ILYA\source\repos\InvAc\InvAc\bin\Debug\InvAc.exe.config
+C:\Users\ILYA\source\repos\InvAc\InvAc\bin\Debug\InvAc.exe
+C:\Users\ILYA\source\repos\InvAc\InvAc\bin\Debug\InvAc.pdb
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.exe
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.pdb
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.RegistrForm.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.MainMenu.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Welcome.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.Inventory.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Properties.Resources.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.DefectiveInventory.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.Provider.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.Administrator.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.Purchase.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.ADDInventory.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.Forms.ADDDefectiveInventory.resources
+C:\Users\ILYA\source\repos\InvAc\InvAc\obj\Debug\InvAc.csproj.ResolveComReference.cache
+C:\Users\ILYA\source\repos\InvAc\InvAc\bin\Debug\Шаблон накладной.docx
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\bin\Debug\Шаблон накладной.docx
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\bin\Debug\InvAc.exe.config
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\bin\Debug\InvAc.exe
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\bin\Debug\InvAc.pdb
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.csproj.AssemblyReference.cache
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.csproj.SuggestedBindingRedirects.cache
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.csproj.ResolveComReference.cache
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.ADDDefectiveInventory.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.ADDInventory.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.Administrator.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.DefectiveInventory.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.Inventory.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.MainMenu.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.LoginForm.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.Provider.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Forms.Purchase.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.RegistrForm.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Welcome.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.Properties.Resources.resources
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.csproj.GenerateResource.cache
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.csproj.CoreCompileInputs.cache
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.exe
+C:\Users\ILYA\Desktop\InvAc — копия\InvAc\obj\Debug\InvAc.pdb
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\Шаблон накладной.docx
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\InvAc.exe.config
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\InvAc.exe
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\InvAc.pdb
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.AssemblyReference.cache
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.SuggestedBindingRedirects.cache
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.ResolveComReference.cache
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.ADDDefectiveInventory.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.ADDInventory.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.Administrator.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.DefectiveInventory.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.Inventory.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.MainMenu.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.LoginForm.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.Provider.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Forms.Purchase.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.RegistrForm.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Welcome.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.Properties.Resources.resources
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.GenerateResource.cache
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.CoreCompileInputs.cache
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.exe
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.pdb
