@@ -393,7 +393,7 @@
             this.ButtonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSave.Font = new System.Drawing.Font("Century", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButtonSave.ForeColor = System.Drawing.Color.White;
-            this.ButtonSave.Location = new System.Drawing.Point(1272, 9);
+            this.ButtonSave.Location = new System.Drawing.Point(1140, 11);
             this.ButtonSave.Name = "ButtonSave";
             this.ButtonSave.Size = new System.Drawing.Size(126, 67);
             this.ButtonSave.TabIndex = 10;
@@ -409,7 +409,7 @@
             this.ButtonDeleteAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonDeleteAccount.Font = new System.Drawing.Font("Century", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButtonDeleteAccount.ForeColor = System.Drawing.Color.White;
-            this.ButtonDeleteAccount.Location = new System.Drawing.Point(1140, 9);
+            this.ButtonDeleteAccount.Location = new System.Drawing.Point(1272, 11);
             this.ButtonDeleteAccount.Name = "ButtonDeleteAccount";
             this.ButtonDeleteAccount.Size = new System.Drawing.Size(126, 67);
             this.ButtonDeleteAccount.TabIndex = 11;
@@ -447,7 +447,7 @@
             this.ButtonADDAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonADDAccount.Font = new System.Drawing.Font("Century", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButtonADDAccount.ForeColor = System.Drawing.Color.White;
-            this.ButtonADDAccount.Location = new System.Drawing.Point(1404, 9);
+            this.ButtonADDAccount.Location = new System.Drawing.Point(1404, 11);
             this.ButtonADDAccount.Name = "ButtonADDAccount";
             this.ButtonADDAccount.Size = new System.Drawing.Size(126, 67);
             this.ButtonADDAccount.TabIndex = 19;
@@ -463,7 +463,7 @@
             this.registerDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.registerDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(82)))), ((int)(((byte)(116)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
@@ -492,8 +492,9 @@
             this.registerDataGridView.GridColor = System.Drawing.Color.White;
             this.registerDataGridView.Location = new System.Drawing.Point(0, 100);
             this.registerDataGridView.Name = "registerDataGridView";
+            this.registerDataGridView.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(82)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
@@ -513,6 +514,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Логин";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -520,6 +522,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Пароль";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -527,6 +530,7 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Имя";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -534,6 +538,7 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "Фамилия";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -541,6 +546,7 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Должность";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -548,6 +554,7 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "Права администратора";
             this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
             // 
             // nameTextBox
             // 

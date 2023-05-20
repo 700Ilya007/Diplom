@@ -7,16 +7,16 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
-
+using System.IO;
 
 namespace InvAc.Forms
 {
 
-   enum RowState
+    enum RowState
     {
         Existed,
         New,
@@ -34,6 +34,8 @@ namespace InvAc.Forms
         {
             _user = user;
             InitializeComponent();
+
+
         }
 
         private void CreateColumns()
@@ -84,7 +86,7 @@ namespace InvAc.Forms
             }
             reader.Close();
         }
-    
+
         private void Inventory_Load(object sender, EventArgs e)
         {
 
@@ -208,7 +210,6 @@ namespace InvAc.Forms
             for (int index = 0; index < DGVInventory.Rows.Count; index++)
             {
                 var rowState = (RowState)DGVInventory.Rows[index].Cells[4].Value;
-
                 if (rowState == RowState.Existed)
                     continue;
 
@@ -256,7 +257,7 @@ namespace InvAc.Forms
 
                 return;
             }
-        
+
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
@@ -284,23 +285,23 @@ namespace InvAc.Forms
             var id = TextBoxIDInventory.Text;
             var name = TextBoxNameInventory.Text;
             int number;
-            decimal price;
-          
+            int price;
+
 
             if (DGVInventory.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
             {
 
 
                 if (int.TryParse(TextBoxNumberOfInventory.Text, out number))
-                    
- 
-                if (decimal.TryParse(TextBoxPrice.Text, out price))
-                {
-                    DGVInventory.Rows[selectedRowIndex].SetValues(id, name, number, price);
-                    DGVInventory.Rows[selectedRowIndex].Cells[4].Value = RowState.Modfield;
-                }
 
-                else
+
+                    if (int.TryParse(TextBoxPrice.Text, out price))
+                    {
+                        DGVInventory.Rows[selectedRowIndex].SetValues(id, name, number, price);
+                        DGVInventory.Rows[selectedRowIndex].Cells[4].Value = RowState.Modfield;
+                    }
+
+                    else
                     {
                         MessageBox.Show("Цена должна иметь числовой формат!");
                     }
@@ -332,7 +333,6 @@ namespace InvAc.Forms
                 }
             }
         }
-
         private void TextBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsDigit(e.KeyChar)))
@@ -344,10 +344,6 @@ namespace InvAc.Forms
                 }
             }
         }
-
-
-      
-
         public void Export_Data_To_Word(DataGridView DGV, string filename)
         {
 
@@ -361,7 +357,7 @@ namespace InvAc.Forms
                 int r = 0;
                 for (int c = 1; c <= ColumnCount - 2; c++)
                 {
-                    for (r = 1; r <= RowCount - 2; r++)
+                    for (r = 0; r <= RowCount - 1; r++)
                     {
                         DataArray[r, c] = DGV.Rows[r].Cells[c].Value;
                     }
@@ -380,7 +376,7 @@ namespace InvAc.Forms
                 {
                     for (int c = 0; c <= ColumnCount - 1; c++)
                     {
-                        oTemp = oTemp + DataArray[r, c] + "\t";
+                        oTemp = oTemp + DataArray[r, c + 1] + "\t";
 
                     }
                 }
@@ -416,15 +412,26 @@ namespace InvAc.Forms
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
 
                 //add header row manually
-                for (int c = 1; c <= ColumnCount - 1; c++)
+                for (int c = 1; c <= ColumnCount - 2; c++)
                 {
-                    oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = DGV.Columns[c].HeaderText;
+                    oDoc.Application.Selection.Tables[1].Cell(1, c).Range.Text = DGV.Columns[c].HeaderText;
                 }
 
                 //Стили таблицы
                 oDoc.Application.Selection.Tables[1].Rows[1].Select();
                 oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
                 oDoc.Application.Selection.Tables[1].Borders.Enable = 1;
+
+                foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
+                {
+                    Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
+                    headerRange.Fields.Add(headerRange, Word.WdFieldType.wdFieldPage);
+                    headerRange.Text = "Акт инвентаризации";
+                    headerRange.Font.Name = "Times New Roman";
+                    headerRange.Font.Size = 16;
+                    headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+
+                }
 
                 //Сохранение файла
 
@@ -436,13 +443,42 @@ namespace InvAc.Forms
         }
 
 
-        private void вWordToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void PictureUpdateTable_MouseLeave(object sender, EventArgs e)
+        {
+            PictureUpdateTable.BackColor = Color.FromArgb(46, 109, 156);
+        }
+
+        private void PictureUpdateTable_MouseMove(object sender, MouseEventArgs e)
+        {
+            PictureUpdateTable.BackColor = Color.FromArgb(12, 82, 116);
+        }
+
+        private void PictureUpdateTable_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(PictureUpdateTable, "Обновить таблицу");
+        }
+
+        private void PictureExit_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(PictureExit, "Выйти из приложения");
+        }
+
+        private void LeftBack_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(LeftBack, "Вернуться назад");
+        }
+
+        private void ToolStripMenuAct_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
 
             sfd.Filter = "Word Documents (*.docx)|*.docx";
 
-            sfd.FileName = "Word.docx";
+            sfd.FileName = "New File.docx";
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
@@ -450,13 +486,18 @@ namespace InvAc.Forms
             }
         }
 
-        private void вExcelToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemExportExcel_Click(object sender, EventArgs e)
         {
+
+            ;
+
             Excel.Application exApp = new Excel.Application();
+
+
             exApp.Workbooks.Add();
             Excel.Worksheet wsh = (Excel.Worksheet)exApp.ActiveSheet;
             int i, j;
-            for (i = 1; i <= DGVInventory.RowCount - 1; i++)
+            for (i = 0; i <= DGVInventory.RowCount - 1; i++)
             {
                 for (j = 1; j <= DGVInventory.ColumnCount - 2; j++)
                 {
@@ -467,8 +508,43 @@ namespace InvAc.Forms
             }
             exApp.Visible = true;
         }
-    }
 
+        private void ToolStripMenuItemImportExcel_Click(object sender, EventArgs e)
+        {
+
+            Microsoft.Office.Interop.Excel.Application xlApp;
+            Microsoft.Office.Interop.Excel.Workbook xlWorkbook;
+            Microsoft.Office.Interop.Excel.Worksheet xlWorksheet;
+            Microsoft.Office.Interop.Excel.Range xlRange;
+
+            int xlRow;
+            string strFileName;
+
+            openFileDialog1.Filter = "Excel Office |*.xls; *xlsx";
+            openFileDialog1.ShowDialog();
+            strFileName = openFileDialog1.FileName;
+
+            if (strFileName != "")
+            {
+                xlApp = new Microsoft.Office.Interop.Excel.Application();
+                xlWorkbook = xlApp.Workbooks.Open(strFileName);
+                xlWorksheet = xlWorkbook.Worksheets["Лист1"];
+                xlRange = xlWorksheet.UsedRange;
+
+                int i = 0;
+
+                for (xlRow = 1; xlRow <= xlRange.Rows.Count; xlRow++)
+                {
+                    i++;
+                    DGVInventory.Rows.Add(i, xlRange.Cells[xlRow, 1].Text, xlRange.Cells[xlRow, 2].Text, xlRange.Cells[xlRow, 3].Text, xlRange.Cells[xlRow, 4].Value = RowState.ModfieldNew);
+                }
+                xlWorkbook.Close();
+                xlApp.Quit();
+            }
+        }
+    }
 }
+
+
 
 

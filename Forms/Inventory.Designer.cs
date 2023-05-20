@@ -34,12 +34,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.экспортироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripFunction = new System.Windows.Forms.ToolStrip();
+            this.ToolStripButtonExport = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ToolStripMenuItemExportExcel = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemExportPDF = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripButtonImport = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ToolStripMenuItemImportExcel = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripDropDownInventory = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ToolStripMenuAct = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.PictureUpdateTable = new System.Windows.Forms.PictureBox();
             this.PictureExit = new System.Windows.Forms.PictureBox();
@@ -80,8 +82,7 @@
             this.tableAdapterManager = new InvAc.Vedenie_UchetaDataSet1TableAdapters.TableAdapterManager();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.ToolStripFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureUpdateTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftBack)).BeginInit();
@@ -98,7 +99,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.ToolStripFunction);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.PictureUpdateTable);
             this.panel1.Controls.Add(this.PictureExit);
@@ -112,67 +113,98 @@
             this.panel1.Size = new System.Drawing.Size(1542, 100);
             this.panel1.TabIndex = 0;
             // 
-            // panel4
+            // ToolStripFunction
             // 
-            this.panel4.Controls.Add(this.toolStrip1);
-            this.panel4.Location = new System.Drawing.Point(41, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(60, 35);
-            this.panel4.TabIndex = 31;
+            this.ToolStripFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripFunction.Dock = System.Windows.Forms.DockStyle.None;
+            this.ToolStripFunction.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ToolStripFunction.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripButtonExport,
+            this.ToolStripButtonImport,
+            this.ToolStripDropDownInventory});
+            this.ToolStripFunction.Location = new System.Drawing.Point(38, 0);
+            this.ToolStripFunction.Name = "ToolStripFunction";
+            this.ToolStripFunction.Size = new System.Drawing.Size(467, 30);
+            this.ToolStripFunction.TabIndex = 32;
+            this.ToolStripFunction.Text = "toolStrip2";
             // 
-            // toolStrip1
+            // ToolStripButtonExport
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripDropDownButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(60, 35);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.ToolStripButtonExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripButtonExport.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ToolStripButtonExport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemExportExcel,
+            this.ToolStripMenuItemExportPDF});
+            this.ToolStripButtonExport.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ToolStripButtonExport.ForeColor = System.Drawing.Color.White;
+            this.ToolStripButtonExport.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripButtonExport.Image")));
+            this.ToolStripButtonExport.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripButtonExport.Name = "ToolStripButtonExport";
+            this.ToolStripButtonExport.Size = new System.Drawing.Size(109, 27);
+            this.ToolStripButtonExport.Text = "Экспорт";
             // 
-            // toolStripDropDownButton1
+            // ToolStripMenuItemExportExcel
             // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.экспортироватьToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = global::InvAc.Properties.Resources.Export;
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 32);
-            this.toolStripDropDownButton1.Text = "Работа с таблицей";
+            this.ToolStripMenuItemExportExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripMenuItemExportExcel.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItemExportExcel.Name = "ToolStripMenuItemExportExcel";
+            this.ToolStripMenuItemExportExcel.Size = new System.Drawing.Size(343, 28);
+            this.ToolStripMenuItemExportExcel.Text = "Экспортировать в Excel";
+            this.ToolStripMenuItemExportExcel.Click += new System.EventHandler(this.ToolStripMenuItemExportExcel_Click);
             // 
-            // экспортироватьToolStripMenuItem
+            // ToolStripMenuItemExportPDF
             // 
-            this.экспортироватьToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.экспортироватьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.вWordToolStripMenuItem,
-            this.вExcelToolStripMenuItem});
-            this.экспортироватьToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.экспортироватьToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.экспортироватьToolStripMenuItem.Name = "экспортироватьToolStripMenuItem";
-            this.экспортироватьToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
-            this.экспортироватьToolStripMenuItem.Text = "Экспортировать";
+            this.ToolStripMenuItemExportPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripMenuItemExportPDF.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItemExportPDF.Name = "ToolStripMenuItemExportPDF";
+            this.ToolStripMenuItemExportPDF.Size = new System.Drawing.Size(343, 28);
+            this.ToolStripMenuItemExportPDF.Text = "Экспортировать в PDF";
             // 
-            // вExcelToolStripMenuItem
+            // ToolStripButtonImport
             // 
-            this.вExcelToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.вExcelToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.вExcelToolStripMenuItem.Name = "вExcelToolStripMenuItem";
-            this.вExcelToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.вExcelToolStripMenuItem.Text = "В Excel";
-            this.вExcelToolStripMenuItem.Click += new System.EventHandler(this.вExcelToolStripMenuItem_Click);
+            this.ToolStripButtonImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripButtonImport.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ToolStripButtonImport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemImportExcel});
+            this.ToolStripButtonImport.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ToolStripButtonImport.ForeColor = System.Drawing.Color.White;
+            this.ToolStripButtonImport.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripButtonImport.Image")));
+            this.ToolStripButtonImport.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripButtonImport.Name = "ToolStripButtonImport";
+            this.ToolStripButtonImport.Size = new System.Drawing.Size(104, 27);
+            this.ToolStripButtonImport.Text = "Импорт";
             // 
-            // вWordToolStripMenuItem
+            // ToolStripMenuItemImportExcel
             // 
-            this.вWordToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.вWordToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.вWordToolStripMenuItem.Name = "вWordToolStripMenuItem";
-            this.вWordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.вWordToolStripMenuItem.Text = "В Word";
-            this.вWordToolStripMenuItem.Click += new System.EventHandler(this.вWordToolStripMenuItem_Click);
+            this.ToolStripMenuItemImportExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripMenuItemImportExcel.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItemImportExcel.Name = "ToolStripMenuItemImportExcel";
+            this.ToolStripMenuItemImportExcel.Size = new System.Drawing.Size(349, 28);
+            this.ToolStripMenuItemImportExcel.Text = "Импортировать из Excel";
+            this.ToolStripMenuItemImportExcel.Click += new System.EventHandler(this.ToolStripMenuItemImportExcel_Click);
+            // 
+            // ToolStripDropDownInventory
+            // 
+            this.ToolStripDropDownInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripDropDownInventory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ToolStripDropDownInventory.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuAct});
+            this.ToolStripDropDownInventory.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ToolStripDropDownInventory.ForeColor = System.Drawing.Color.White;
+            this.ToolStripDropDownInventory.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripDropDownInventory.Image")));
+            this.ToolStripDropDownInventory.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripDropDownInventory.Name = "ToolStripDropDownInventory";
+            this.ToolStripDropDownInventory.Size = new System.Drawing.Size(202, 27);
+            this.ToolStripDropDownInventory.Text = "Инвентаризация";
+            // 
+            // ToolStripMenuAct
+            // 
+            this.ToolStripMenuAct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ToolStripMenuAct.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuAct.Name = "ToolStripMenuAct";
+            this.ToolStripMenuAct.Size = new System.Drawing.Size(313, 28);
+            this.ToolStripMenuAct.Text = "Акт инвентаризации";
+            this.ToolStripMenuAct.Click += new System.EventHandler(this.ToolStripMenuAct_Click);
             // 
             // label4
             // 
@@ -196,6 +228,9 @@
             this.PictureUpdateTable.TabIndex = 28;
             this.PictureUpdateTable.TabStop = false;
             this.PictureUpdateTable.Click += new System.EventHandler(this.PictureRefreshTable_Click);
+            this.PictureUpdateTable.MouseLeave += new System.EventHandler(this.PictureUpdateTable_MouseLeave);
+            this.PictureUpdateTable.MouseHover += new System.EventHandler(this.PictureUpdateTable_MouseHover);
+            this.PictureUpdateTable.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureUpdateTable_MouseMove);
             // 
             // PictureExit
             // 
@@ -209,6 +244,7 @@
             this.PictureExit.TabStop = false;
             this.PictureExit.Click += new System.EventHandler(this.PictureExit_Click);
             this.PictureExit.MouseLeave += new System.EventHandler(this.PictureExit_MouseLeave);
+            this.PictureExit.MouseHover += new System.EventHandler(this.PictureExit_MouseHover);
             this.PictureExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureExit_MouseMove);
             // 
             // LeftBack
@@ -223,12 +259,13 @@
             this.LeftBack.TabStop = false;
             this.LeftBack.Click += new System.EventHandler(this.LeftBack_Click);
             this.LeftBack.MouseLeave += new System.EventHandler(this.LeftBack_MouseLeave);
+            this.LeftBack.MouseHover += new System.EventHandler(this.LeftBack_MouseHover);
             this.LeftBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LeftBack_MouseMove);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(70, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(914, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(179, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,7 +339,6 @@
             this.DGVInventory.Location = new System.Drawing.Point(0, 0);
             this.DGVInventory.MultiSelect = false;
             this.DGVInventory.Name = "DGVInventory";
-            this.DGVInventory.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(82)))), ((int)(((byte)(116)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -649,10 +685,8 @@
             this.Load += new System.EventHandler(this.Inventory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.ToolStripFunction.ResumeLayout(false);
+            this.ToolStripFunction.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureUpdateTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftBack)).EndInit();
@@ -714,11 +748,13 @@
         private System.Windows.Forms.TextBox TextBoxIDInventory;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripMenuItem экспортироватьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вExcelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вWordToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip ToolStripFunction;
+        private System.Windows.Forms.ToolStripDropDownButton ToolStripButtonExport;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExportExcel;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExportPDF;
+        private System.Windows.Forms.ToolStripDropDownButton ToolStripButtonImport;
+        private System.Windows.Forms.ToolStripDropDownButton ToolStripDropDownInventory;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuAct;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemImportExcel;
     }
 }

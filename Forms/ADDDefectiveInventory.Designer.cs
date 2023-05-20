@@ -163,7 +163,7 @@
             // AutorizationText
             // 
             this.AutorizationText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AutorizationText.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AutorizationText.Font = new System.Drawing.Font("Century", 12.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.AutorizationText.ForeColor = System.Drawing.Color.White;
             this.AutorizationText.Location = new System.Drawing.Point(0, 0);
             this.AutorizationText.Name = "AutorizationText";
@@ -310,6 +310,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";

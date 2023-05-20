@@ -329,7 +329,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.button1.Font = new System.Drawing.Font("Century", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(552, 633);
@@ -424,8 +424,9 @@
             // 
             this.DateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.DateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
-            this.DateTimePicker.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.DateTimePicker.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.DateTimePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
+            this.DateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
+            this.DateTimePicker.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.DateTimePicker.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DateTimePicker.Location = new System.Drawing.Point(332, 318);
@@ -497,7 +498,7 @@
             this.TextBoxNameInventory2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory2.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory2.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory2.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory2.Name = "TextBoxNameInventory2";
             this.TextBoxNameInventory2.Size = new System.Drawing.Size(266, 35);
@@ -506,12 +507,12 @@
             // 
             // ButtonNew2
             // 
-            this.ButtonNew2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew2.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ButtonNew2.ForeColor = System.Drawing.Color.White;
-            this.ButtonNew2.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew2.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew2.Name = "ButtonNew2";
-            this.ButtonNew2.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew2.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew2.TabIndex = 28;
             this.ButtonNew2.Text = "Внести в накладную";
             this.ButtonNew2.UseVisualStyleBackColor = false;
@@ -519,12 +520,12 @@
             // 
             // ButtonNew3
             // 
-            this.ButtonNew3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew3.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew3.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew3.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew3.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew3.Name = "ButtonNew3";
-            this.ButtonNew3.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew3.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew3.TabIndex = 29;
             this.ButtonNew3.Text = "Внести в накладную";
             this.ButtonNew3.UseVisualStyleBackColor = false;
@@ -537,7 +538,7 @@
             this.TextBoxNameInventory3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory3.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory3.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory3.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory3.Name = "TextBoxNameInventory3";
             this.TextBoxNameInventory3.Size = new System.Drawing.Size(266, 35);
@@ -550,7 +551,7 @@
             this.TextBoxNameInventory4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory4.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory4.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory4.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory4.Name = "TextBoxNameInventory4";
             this.TextBoxNameInventory4.Size = new System.Drawing.Size(266, 35);
@@ -563,7 +564,7 @@
             this.TextBoxNameInventory5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory5.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory5.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory5.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory5.Name = "TextBoxNameInventory5";
             this.TextBoxNameInventory5.Size = new System.Drawing.Size(266, 35);
@@ -576,7 +577,7 @@
             this.TextBoxNameInventory6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory6.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory6.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory6.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory6.Name = "TextBoxNameInventory6";
             this.TextBoxNameInventory6.Size = new System.Drawing.Size(266, 35);
@@ -589,7 +590,7 @@
             this.TextBoxNameInventory7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory7.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory7.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory7.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory7.Name = "TextBoxNameInventory7";
             this.TextBoxNameInventory7.Size = new System.Drawing.Size(266, 35);
@@ -602,7 +603,7 @@
             this.TextBoxNameInventory8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory8.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory8.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory8.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory8.Name = "TextBoxNameInventory8";
             this.TextBoxNameInventory8.Size = new System.Drawing.Size(266, 35);
@@ -615,7 +616,7 @@
             this.TextBoxNameInventory9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory9.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory9.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory9.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory9.Name = "TextBoxNameInventory9";
             this.TextBoxNameInventory9.Size = new System.Drawing.Size(266, 35);
@@ -628,7 +629,7 @@
             this.TextBoxNameInventory10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxNameInventory10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxNameInventory10.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxNameInventory10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxNameInventory10.ForeColor = System.Drawing.Color.White;
             this.TextBoxNameInventory10.Location = new System.Drawing.Point(1091, 157);
             this.TextBoxNameInventory10.Name = "TextBoxNameInventory10";
             this.TextBoxNameInventory10.Size = new System.Drawing.Size(266, 35);
@@ -637,12 +638,12 @@
             // 
             // ButtonNew10
             // 
-            this.ButtonNew10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew10.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew10.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew10.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew10.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew10.Name = "ButtonNew10";
-            this.ButtonNew10.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew10.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew10.TabIndex = 38;
             this.ButtonNew10.Text = "Внести в накладную";
             this.ButtonNew10.UseVisualStyleBackColor = false;
@@ -651,12 +652,12 @@
             // 
             // ButtonNew8
             // 
-            this.ButtonNew8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew8.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew8.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew8.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew8.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew8.Name = "ButtonNew8";
-            this.ButtonNew8.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew8.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew8.TabIndex = 39;
             this.ButtonNew8.Text = "Внести в накладную";
             this.ButtonNew8.UseVisualStyleBackColor = false;
@@ -665,12 +666,12 @@
             // 
             // ButtonNew7
             // 
-            this.ButtonNew7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew7.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew7.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew7.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew7.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew7.Name = "ButtonNew7";
-            this.ButtonNew7.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew7.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew7.TabIndex = 40;
             this.ButtonNew7.Text = "Внести в накладную";
             this.ButtonNew7.UseVisualStyleBackColor = false;
@@ -679,12 +680,12 @@
             // 
             // ButtonNew9
             // 
-            this.ButtonNew9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew9.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew9.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew9.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew9.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew9.Name = "ButtonNew9";
-            this.ButtonNew9.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew9.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew9.TabIndex = 41;
             this.ButtonNew9.Text = "Внести в накладную";
             this.ButtonNew9.UseVisualStyleBackColor = false;
@@ -693,12 +694,12 @@
             // 
             // ButtonNew4
             // 
-            this.ButtonNew4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew4.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew4.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew4.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew4.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew4.Name = "ButtonNew4";
-            this.ButtonNew4.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew4.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew4.TabIndex = 42;
             this.ButtonNew4.Text = "Внести в накладную";
             this.ButtonNew4.UseVisualStyleBackColor = false;
@@ -707,12 +708,12 @@
             // 
             // ButtonNew6
             // 
-            this.ButtonNew6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew6.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew6.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew6.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew6.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew6.Name = "ButtonNew6";
-            this.ButtonNew6.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew6.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew6.TabIndex = 43;
             this.ButtonNew6.Text = "Внести в накладную";
             this.ButtonNew6.UseVisualStyleBackColor = false;
@@ -721,12 +722,12 @@
             // 
             // ButtonNew5
             // 
-            this.ButtonNew5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.ButtonNew5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.ButtonNew5.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ButtonNew5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
-            this.ButtonNew5.Location = new System.Drawing.Point(1368, 157);
+            this.ButtonNew5.ForeColor = System.Drawing.Color.White;
+            this.ButtonNew5.Location = new System.Drawing.Point(1091, 372);
             this.ButtonNew5.Name = "ButtonNew5";
-            this.ButtonNew5.Size = new System.Drawing.Size(162, 117);
+            this.ButtonNew5.Size = new System.Drawing.Size(266, 83);
             this.ButtonNew5.TabIndex = 44;
             this.ButtonNew5.Text = "Внести в накладную";
             this.ButtonNew5.UseVisualStyleBackColor = false;
@@ -752,7 +753,7 @@
             this.TextBoxKolvo10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo10.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo10.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo10.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo10.Name = "TextBoxKolvo10";
             this.TextBoxKolvo10.Size = new System.Drawing.Size(266, 35);
@@ -766,7 +767,7 @@
             this.TextBoxKolvo9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo9.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo9.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo9.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo9.Name = "TextBoxKolvo9";
             this.TextBoxKolvo9.Size = new System.Drawing.Size(266, 35);
@@ -780,7 +781,7 @@
             this.TextBoxKolvo8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo8.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo8.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo8.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo8.Name = "TextBoxKolvo8";
             this.TextBoxKolvo8.Size = new System.Drawing.Size(266, 35);
@@ -794,7 +795,7 @@
             this.TextBoxKolvo7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo7.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo7.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo7.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo7.Name = "TextBoxKolvo7";
             this.TextBoxKolvo7.Size = new System.Drawing.Size(266, 35);
@@ -808,7 +809,7 @@
             this.TextBoxKolvo6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo6.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo6.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo6.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo6.Name = "TextBoxKolvo6";
             this.TextBoxKolvo6.Size = new System.Drawing.Size(266, 35);
@@ -822,7 +823,7 @@
             this.TextBoxKolvo5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo5.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo5.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo5.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo5.Name = "TextBoxKolvo5";
             this.TextBoxKolvo5.Size = new System.Drawing.Size(266, 35);
@@ -836,7 +837,7 @@
             this.TextBoxKolvo4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo4.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo4.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo4.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo4.Name = "TextBoxKolvo4";
             this.TextBoxKolvo4.Size = new System.Drawing.Size(266, 35);
@@ -850,7 +851,7 @@
             this.TextBoxKolvo3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo3.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo3.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo3.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo3.Name = "TextBoxKolvo3";
             this.TextBoxKolvo3.Size = new System.Drawing.Size(266, 35);
@@ -864,7 +865,7 @@
             this.TextBoxKolvo2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxKolvo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxKolvo2.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxKolvo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxKolvo2.ForeColor = System.Drawing.Color.White;
             this.TextBoxKolvo2.Location = new System.Drawing.Point(1091, 236);
             this.TextBoxKolvo2.Name = "TextBoxKolvo2";
             this.TextBoxKolvo2.Size = new System.Drawing.Size(266, 35);
@@ -891,7 +892,7 @@
             this.TextBoxPrice4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice4.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice4.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice4.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice4.Name = "TextBoxPrice4";
             this.TextBoxPrice4.Size = new System.Drawing.Size(266, 35);
@@ -905,7 +906,7 @@
             this.TextBoxPrice3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice3.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice3.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice3.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice3.Name = "TextBoxPrice3";
             this.TextBoxPrice3.Size = new System.Drawing.Size(266, 35);
@@ -919,7 +920,7 @@
             this.TextBoxPrice5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice5.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice5.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice5.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice5.Name = "TextBoxPrice5";
             this.TextBoxPrice5.Size = new System.Drawing.Size(266, 35);
@@ -933,7 +934,7 @@
             this.TextBoxPrice6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice6.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice6.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice6.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice6.Name = "TextBoxPrice6";
             this.TextBoxPrice6.Size = new System.Drawing.Size(266, 35);
@@ -947,7 +948,7 @@
             this.TextBoxPrice7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice7.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice7.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice7.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice7.Name = "TextBoxPrice7";
             this.TextBoxPrice7.Size = new System.Drawing.Size(266, 35);
@@ -961,7 +962,7 @@
             this.TextBoxPrice10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice10.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice10.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice10.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice10.Name = "TextBoxPrice10";
             this.TextBoxPrice10.Size = new System.Drawing.Size(266, 35);
@@ -975,7 +976,7 @@
             this.TextBoxPrice2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice2.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice2.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice2.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice2.Name = "TextBoxPrice2";
             this.TextBoxPrice2.Size = new System.Drawing.Size(266, 35);
@@ -989,7 +990,7 @@
             this.TextBoxPrice8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice8.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice8.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice8.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice8.Name = "TextBoxPrice8";
             this.TextBoxPrice8.Size = new System.Drawing.Size(266, 35);
@@ -1003,7 +1004,7 @@
             this.TextBoxPrice9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.TextBoxPrice9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(147)))), ((int)(((byte)(156)))));
             this.TextBoxPrice9.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxPrice9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(204)))), ((int)(((byte)(140)))));
+            this.TextBoxPrice9.ForeColor = System.Drawing.Color.White;
             this.TextBoxPrice9.Location = new System.Drawing.Point(1091, 321);
             this.TextBoxPrice9.Name = "TextBoxPrice9";
             this.TextBoxPrice9.Size = new System.Drawing.Size(266, 35);

@@ -49,17 +49,6 @@ namespace InvAc.Forms
 
         }
 
-        //int summ1 = 0;
-        //int summ2 = 0;
-        //int summ3 = 0;
-        //int summ4 = 0;
-        //int summ5 = 0;
-        //int summ6 = 0;
-        //int summ7 = 0;
-        //int summ8 = 0;
-        //int summ9 = 0;
-        //int summ10 = 0;
-        //int itog = 0;
         int a = 0;
         int b = 0;
         int c = 0;
@@ -74,6 +63,7 @@ namespace InvAc.Forms
             this.inventoryTableAdapter.Fill(this.vedenie_UchetaDataSet1.Inventory);
 
         }
+
 
         private void PictureExit_Click(object sender, EventArgs e)
         {
@@ -102,12 +92,11 @@ namespace InvAc.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(TextBoxOrganization.Text != string.Empty && TextBoxNomer.Text != string.Empty && TextBoxPrice1.Text != string.Empty)
+           
+                if (TextBoxOrganization.Text != string.Empty && TextBoxNomer.Text != string.Empty && TextBoxPrice1.Text != string.Empty)
          
             {
                
-                 
-
                 var helper = new WordHelper("Шаблон накладной.docx");
 
                 var items = new Dictionary<string, string>
@@ -160,12 +149,15 @@ namespace InvAc.Forms
             };
                 helper.Process(items);
 
+   
                 MessageBox.Show("Накладная на поставку инвентаря успешно создана");
             }
             else
             {
                 MessageBox.Show("Одно из полей незаполнено");
             }
+
+            
         }
 
         private void ButtonNew2_Click(object sender, EventArgs e)
@@ -184,6 +176,7 @@ namespace InvAc.Forms
                 b = Convert.ToInt32(TextBoxPrice1.Text);
                 c = a * b;
                 TextBoxSumm1.Text = c.ToString();
+           
             }
             else
             {
@@ -615,24 +608,7 @@ namespace InvAc.Forms
             }
         }
 
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    Stream myStream;
-        //    SaveFileDialog saveFileDialog = new SaveFileDialog();
-
-        //    saveFileDialog.Filter = "Word Documents|*.docx";
-        //    saveFileDialog.FilterIndex = 2;
-        //    saveFileDialog.RestoreDirectory = true;
-
-        //    if(saveFileDialog.ShowDialog() == DialogResult.OK)
-        //    {
-        //        if((myStream = saveFileDialog.OpenFile()) != null)
-        //        {
-        //            myStream.Close();
-        //        }
-        //    }
-        //}
-
+ 
         private void TextBoxItog_TextChanged(object sender, EventArgs e)
         {
             try

@@ -61,8 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="checkUser.cs" />
-    <Compile Include="DataBase.cs" />
+    <Compile Include="Class\checkUser.cs" />
+    <Compile Include="Class\DataBase.cs" />
     <Compile Include="Forms\ADDDefectiveInventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,7 +144,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Vedenie_UchetaDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="WordHelper.cs" />
+    <Compile Include="Class\WordHelper.cs" />
     <EmbeddedResource Include="Forms\ADDDefectiveInventory.resx">
       <DependentUpon>ADDDefectiveInventory.cs</DependentUpon>
     </EmbeddedResource>

@@ -149,15 +149,20 @@ namespace InvAc.Forms
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите сохранить изменения?", "Предупреждение", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+
+
             {
                 providerBindingSource.EndEdit();
                 providerTableAdapter.Update(vedenie_UchetaDataSet1);
-                MessageBox.Show("Запись сохранена!", "Предупреждение!");
             }
-            catch (Exception)
+
+            else if (dialogResult == DialogResult.No)
             {
-                MessageBox.Show("Ошибка. Заполните все поля");
+
+                return;
             }
         }
     }

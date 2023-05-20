@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
@@ -394,100 +394,31 @@ namespace InvAc.Forms
             }
             exApp.Visible = true;
         }
-        public void Export_Data_To_Word(DataGridView DGV, string filename)
+       
+
+        private void PictureRefreshTable_MouseHover(object sender, EventArgs e)
         {
-
-            if (DGV.Rows.Count != 0)
-            {
-                int RowCount = DGV.Rows.Count;
-                int ColumnCount = DGV.Columns.Count;
-                Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
-
-                //Добавление строк и ячеек
-                int r = 0;
-                for (int c = 1; c <= ColumnCount - 2; c++)
-                {
-                    for (r = 1; r <= RowCount - 2; r++)
-                    {
-                        DataArray[r, c] = DGV.Rows[r].Cells[c].Value;
-                    }
-                }
-
-                Word.Document oDoc = new Word.Document();
-                oDoc.Application.Visible = true;
-
-                //Ориентация листа
-                oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
-
-
-                dynamic oRange = oDoc.Content.Application.Selection.Range;
-                string oTemp = "";
-                for (r = 0; r <= RowCount - 1; r++)
-                {
-                    for (int c = 0; c <= ColumnCount - 1; c++)
-                    {
-                        oTemp = oTemp + DataArray[r, c] + "\t";
-
-                    }
-                }
-
-                //Формат таблицы
-                oRange.Text = oTemp;
-                object oMissing = Missing.Value;
-                object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
-                object ApplyBorders = true;
-                object AutoFit = true;
-                object AutoFitBehavior = Word.WdAutoFitBehavior.wdAutoFitContent;
-
-
-
-                oRange.ConvertToTable(ref Separator, ref RowCount, ref ColumnCount,
-                                  Type.Missing, Type.Missing, ref ApplyBorders,
-                                  Type.Missing, Type.Missing, Type.Missing,
-                                  Type.Missing, Type.Missing, Type.Missing,
-                                  Type.Missing, ref AutoFit, ref AutoFitBehavior, Type.Missing);
-
-                oRange.Select();
-
-                oDoc.Application.Selection.Tables[1].Select();
-                oDoc.Application.Selection.Tables[1].Rows.AllowBreakAcrossPages = 0;
-                oDoc.Application.Selection.Tables[1].Rows.Alignment = 0;
-                oDoc.Application.Selection.Tables[1].Rows[1].Select();
-                oDoc.Application.Selection.InsertRowsAbove(1);
-                oDoc.Application.Selection.Tables[1].Rows[1].Select();
-
-                //Стиль заголовка таблицы
-                oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 2;
-                oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
-                oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
-
-                //add header row manually
-                for (int c = 1; c <= ColumnCount - 1; c++)
-                {
-                    oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = DGV.Columns[c].HeaderText;
-                }
-
-                //Стили таблицы
-                oDoc.Application.Selection.Tables[1].Rows[1].Select();
-                oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
-                oDoc.Application.Selection.Tables[1].Borders.Enable = 1;
-
-                //Сохранение файла
-
-                oDoc.SaveAs(filename, ref oMissing, ref oMissing, ref oMissing,
-            ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
-            ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
-            ref oMissing, ref oMissing);
-            }
+            ToolTip t = new ToolTip();
+            t.SetToolTip(PictureRefreshTable, "Обновить таблицу");
         }
 
-        private void вExcelToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void PictureRefreshTable_MouseLeave(object sender, EventArgs e)
+        {
+            PictureRefreshTable.BackColor = Color.FromArgb(46, 109, 156);
+        }
+
+        private void PictureRefreshTable_MouseMove(object sender, MouseEventArgs e)
+        {
+            PictureRefreshTable.BackColor = Color.FromArgb(12, 82, 116);
+        }
+
+        private void ToolStripMenuItemExportExcel_Click(object sender, EventArgs e)
         {
             Excel.Application exApp = new Excel.Application();
             exApp.Workbooks.Add();
             Excel.Worksheet wsh = (Excel.Worksheet)exApp.ActiveSheet;
             int i, j;
-            for (i = 1; i <= DGVDefectiveInventory.RowCount - 1; i++)
+            for (i = 0; i <= DGVDefectiveInventory.RowCount - 1; i++)
             {
                 for (j = 1; j <= DGVDefectiveInventory.ColumnCount - 2; j++)
                 {
@@ -499,17 +430,37 @@ namespace InvAc.Forms
             exApp.Visible = true;
         }
 
-        private void вWordToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemImportExcel_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
+            Microsoft.Office.Interop.Excel.Application xlApp;
+            Microsoft.Office.Interop.Excel.Workbook xlWorkbook;
+            Microsoft.Office.Interop.Excel.Worksheet xlWorksheet;
+            Microsoft.Office.Interop.Excel.Range xlRange;
 
-            sfd.Filter = "Word Documents (*.docx)|*.docx";
+            int xlRow;
+            string strFileName;
 
-            sfd.FileName = "Word.docx";
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "Excel Office |*.xls; *xlsx";
+            openFileDialog1.ShowDialog();
+            strFileName = openFileDialog1.FileName;
 
-            if (sfd.ShowDialog() == DialogResult.OK)
+            if (strFileName != "")
             {
-                Export_Data_To_Word(DGVDefectiveInventory, sfd.FileName);
+                xlApp = new Microsoft.Office.Interop.Excel.Application();
+                xlWorkbook = xlApp.Workbooks.Open(strFileName);
+                xlWorksheet = xlWorkbook.Worksheets["Лист1"];
+                xlRange = xlWorksheet.UsedRange;
+
+                int i = 0;
+
+                for (xlRow = 1; xlRow <= xlRange.Rows.Count; xlRow++)
+                {
+                    i++;
+                    DGVDefectiveInventory.Rows.Add(i, xlRange.Cells[xlRow, 1].Text, xlRange.Cells[xlRow, 2].Text, xlRange.Cells[xlRow, 3].Text, xlRange.Cells[xlRow, 4].Text);
+                }
+                xlWorkbook.Close();
+                xlApp.Quit();
             }
         }
     }

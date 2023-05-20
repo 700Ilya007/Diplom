@@ -26,7 +26,7 @@ namespace InvAc.Forms
         private void LeftBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-        
+         
         }
 
         private void ButtonADD_Click(object sender, EventArgs e)

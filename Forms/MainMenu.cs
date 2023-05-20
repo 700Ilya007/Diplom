@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace InvAc.Forms
 {
@@ -163,6 +163,18 @@ namespace InvAc.Forms
             this.Hide();
             Purchase purchase = new Purchase(_user);
             purchase.ShowDialog();
+        }
+
+        private void PictureExitAccount_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(PictureExitAccount, "Выйти из аккаунта");
+        }
+
+        private void PictureExit_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(PictureExit, "Выйти из приложения");
         }
     }
 }

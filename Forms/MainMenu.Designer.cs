@@ -48,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureExitAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,7 +56,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
             this.panel1.Controls.Add(this.PictureExit);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.ButtonAdmin);
             this.panel1.Controls.Add(this.TextBoxStatus);
             this.panel1.Controls.Add(this.PictureExitAccount);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -78,6 +78,7 @@
             this.PictureExit.TabStop = false;
             this.PictureExit.Click += new System.EventHandler(this.PictureExit_Click);
             this.PictureExit.MouseLeave += new System.EventHandler(this.PictureExit_MouseLeave);
+            this.PictureExit.MouseHover += new System.EventHandler(this.PictureExit_MouseHover);
             this.PictureExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureExit_MouseMove);
             // 
             // label1
@@ -98,11 +99,11 @@
             this.ButtonAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonAdmin.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
             this.ButtonAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAdmin.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ButtonAdmin.Font = new System.Drawing.Font("Century", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ButtonAdmin.ForeColor = System.Drawing.Color.White;
-            this.ButtonAdmin.Location = new System.Drawing.Point(135, 4);
+            this.ButtonAdmin.Location = new System.Drawing.Point(527, 27);
             this.ButtonAdmin.Name = "ButtonAdmin";
-            this.ButtonAdmin.Size = new System.Drawing.Size(340, 34);
+            this.ButtonAdmin.Size = new System.Drawing.Size(517, 61);
             this.ButtonAdmin.TabIndex = 9;
             this.ButtonAdmin.Text = "Управление аккаунтами";
             this.ButtonAdmin.UseVisualStyleBackColor = false;
@@ -133,6 +134,7 @@
             this.PictureExitAccount.TabStop = false;
             this.PictureExitAccount.Click += new System.EventHandler(this.PictureExitAccount_Click);
             this.PictureExitAccount.MouseLeave += new System.EventHandler(this.PictureExitAccount_MouseLeave);
+            this.PictureExitAccount.MouseHover += new System.EventHandler(this.PictureExitAccount_MouseHover);
             this.PictureExitAccount.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureExitAccount_MouseMove);
             // 
             // pictureBox1
@@ -177,6 +179,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.panel3.Controls.Add(this.ButtonAdmin);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 902);
             this.panel3.Name = "panel3";
@@ -266,6 +269,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureExitAccount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

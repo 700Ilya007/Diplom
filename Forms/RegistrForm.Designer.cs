@@ -160,7 +160,7 @@
             this.ButtonRegistration.Name = "ButtonRegistration";
             this.ButtonRegistration.Size = new System.Drawing.Size(380, 70);
             this.ButtonRegistration.TabIndex = 5;
-            this.ButtonRegistration.Text = "Создать";
+            this.ButtonRegistration.Text = "Создать аккаунт";
             this.ButtonRegistration.UseVisualStyleBackColor = false;
             this.ButtonRegistration.Click += new System.EventHandler(this.ButtonRegistration_Click);
             // 

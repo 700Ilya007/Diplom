@@ -36,12 +36,12 @@
 
                 var name = TextBoxNameInventory.Text;
                 int number;
-                decimal price;
+                int price;
 
 
 
                 if (int.TryParse(TextBoxNumberOfInventory.Text, out number))
-                if(decimal.TryParse(TextBoxPrice.Text, out price))
+                if(int.TryParse(TextBoxPrice.Text, out price))
                     {
 
                         var addQuery = $"Insert into Inventory (NameInventory, NumberOfInventory, Price) values ('{name}', '{number}', '{price}')";
