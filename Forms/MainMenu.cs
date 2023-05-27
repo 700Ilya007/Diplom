@@ -61,9 +61,16 @@ namespace InvAc.Forms
 
         private void ButtonAdmin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Administrator administrator = new Administrator(_user);
-            administrator.ShowDialog();
+            try
+            {
+                this.Hide();
+                Administrator administrator = new Administrator(_user);
+                administrator.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Одно из полей не заполнено");
+            }
 
         }
         private void ButtonProvider_Click(object sender, EventArgs e)

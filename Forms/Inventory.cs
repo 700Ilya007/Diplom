@@ -7,11 +7,14 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-
+using System.Data.OleDb;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
 using System.IO;
+using InvAc.Class;
+
+
 
 namespace InvAc.Forms
 {
@@ -35,6 +38,8 @@ namespace InvAc.Forms
             _user = user;
             InitializeComponent();
 
+            con = new SqlConnection(db.GetConnection());
+            Loadrecords(DGVInventory);
 
         }
 
@@ -199,7 +204,6 @@ namespace InvAc.Forms
         }
         private void TextBoxSearch_TextChanged(object sender, EventArgs e)
         {
-
             Search(DGVInventory);
         }
 
@@ -221,7 +225,6 @@ namespace InvAc.Forms
 
                     var command = new SqlCommand(deleteQuery, dataBase.getConnection());
                     command.ExecuteNonQuery();
-
 
                 }
 
@@ -472,25 +475,10 @@ namespace InvAc.Forms
             t.SetToolTip(LeftBack, "Вернуться назад");
         }
 
-        private void ToolStripMenuAct_Click(object sender, EventArgs e)
+      
+
+        private void ButtonExport_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-
-            sfd.Filter = "Word Documents (*.docx)|*.docx";
-
-            sfd.FileName = "New File.docx";
-
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                Export_Data_To_Word(DGVInventory, sfd.FileName);
-            }
-        }
-
-        private void ToolStripMenuItemExportExcel_Click(object sender, EventArgs e)
-        {
-
-            ;
-
             Excel.Application exApp = new Excel.Application();
 
 
@@ -509,9 +497,9 @@ namespace InvAc.Forms
             exApp.Visible = true;
         }
 
-        private void ToolStripMenuItemImportExcel_Click(object sender, EventArgs e)
+        private void ButtonImport_Click(object sender, EventArgs e)
         {
-
+            DGVInventory.Rows.Clear();
             Microsoft.Office.Interop.Excel.Application xlApp;
             Microsoft.Office.Interop.Excel.Workbook xlWorkbook;
             Microsoft.Office.Interop.Excel.Worksheet xlWorksheet;
@@ -535,15 +523,78 @@ namespace InvAc.Forms
 
                 for (xlRow = 1; xlRow <= xlRange.Rows.Count; xlRow++)
                 {
-                    i++;
-                    DGVInventory.Rows.Add(i, xlRange.Cells[xlRow, 1].Text, xlRange.Cells[xlRow, 2].Text, xlRange.Cells[xlRow, 3].Text, xlRange.Cells[xlRow, 4].Value = RowState.ModfieldNew);
+                    if (xlRange.Cells[xlRow, 1].Text != "")
+                    {
+                        i++;
+                        DGVInventory.Rows.Add(i, xlRange.Cells[xlRow, 1].Text, xlRange.Cells[xlRow, 2].Text, xlRange.Cells[xlRow, 3].Text);
+                    }
                 }
                 xlWorkbook.Close();
                 xlApp.Quit();
             }
         }
+
+        private void ButtonActInventory_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            sfd.Filter = "Word Documents (*.docx)|*.docx";
+
+            sfd.FileName = "Акт инвентаризации.docx";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                Export_Data_To_Word(DGVInventory, sfd.FileName);
+            }
+        }
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataReader reader;
+        ConnectionDB db = new ConnectionDB();
+
+        private void Loadrecords(DataGridView dgw)
+        {
+
+            DGVInventory.Rows.Clear();
+            int i = 0;
+            con.Open();
+            cmd = new SqlCommand("SELECT * FROM Inventory", con);
+            reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+               
+                for (int index = 0; index < DGVInventory.Rows.Count; index++)
+                {
+                    i++;
+                
+                    DGVInventory.Rows.Add(i, reader[DGVInventory.Rows[index].Cells[1].Value.ToString()], reader[DGVInventory.Rows[index].Cells[2].Value.ToString()], reader[DGVInventory.Rows[index].Cells[3].Value.ToString()]);
+                }
+            }
+
+            reader.Close();
+            con.Close();
+        }
+        private void ButtonSaveImport_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < DGVInventory.Rows.Count; i++)
+            {
+
+                con.Open();
+                cmd = new SqlCommand("INSERT INTO Inventory (NameInventory, NumberOfInventory, Price) VALUES ( @NameInventory, @NumberOfInventory, @Price)", con);
+                cmd.Parameters.AddWithValue("@NameInventory", DGVInventory.Rows[i].Cells[1].Value.ToString());
+                cmd.Parameters.AddWithValue("@NumberOfInventory", DGVInventory.Rows[i].Cells[2].Value.ToString());
+                cmd.Parameters.AddWithValue("@Price", DGVInventory.Rows[i].Cells[3].Value.ToString());
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+                Loadrecords(DGVInventory);
+            }
+        }
     }
 }
+
 
 
 

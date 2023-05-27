@@ -67,3 +67,7 @@ C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.GenerateResource.
 C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.CoreCompileInputs.cache
 C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.exe
 C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.pdb
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\itextsharp.dll
+C:\Users\ILYA\source\repos\InvAс\InvAc\bin\Debug\itextsharp.xml
+C:\Users\ILYA\source\repos\InvAс\InvAc\obj\Debug\InvAc.csproj.CopyComplete
